@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт города Седона в Аризоне</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -36,10 +37,11 @@
 
                 <div class="sight-1">
                     <div class="sight-description">
-                        <p>Настоящий городок</p>
+                        <p class="sight-description-title">Настоящий<br>городок</p>
                         <p>— №1 —</p>
                         <p>Седона – не аттракцион для туристов, там течет своя жизнь</p>
                     </div>
+                    <div class="sight-photo-block"></div>
                 </div>
 
                 <div class="advice-list">
@@ -58,36 +60,40 @@
                 </div>
 
                 <div class="sight-2">
+                    <div class="sight-photo-block"></div>
                     <div class="sight-description">
-                        <p>Там есть мост дьявола</p>
+                        <p class="sight-description-title">Там есть<br>мост дьявола</p>
                         <p>— №2 —</p>
                         <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
                     </div>
                 </div>
 
-                <div class="sight-3">
-                    <div class="sight-description">
-                        <p>Небольшая площадь</p>
-                        <p>— №3 —</p>
-                        <p>Все достопримечательности находятся очень близко</p>
+                <div class="minor-sight-wrapper">
+                    <div class="sight-3">
+                        <div class="sight-description minor">
+                            <p class="sight-description-title minor">Небольшая<br>площадь</p>
+                            <p>— №3 —</p>
+                            <p>Все достопримечательности находятся очень близко</p>
+                        </div>
+                    </div>
+    
+                    <div class="sight-4">
+                        <div class="sight-description minor">
+                            <p class="sight-description-title minor">Красивая<br>дорога</p>
+                            <p>— №4 —</p>
+                            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                        </div>
+                    </div>
+    
+                    <div class="sight-5">
+                        <div class="sight-description minor">
+                            <p class="sight-description-title minor">Мало<br>туристов</p>
+                            <p>— №5 —</p>
+                            <p>Большинство едет в Гранд Каньон и толпится там</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="sight-4">
-                    <div class="sight-description">
-                        <p>Красивая дорога</p>
-                        <p>— №4 —</p>
-                        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-                    </div>
-                </div>
-
-                <div class="sight-5">
-                    <div class="sight-description">
-                        <p>Мало туристов</p>
-                        <p>— №5 —</p>
-                        <p>Большинство едет в Гранд Каньон и толпится там</p>
-                    </div>
-                </div>
+                                
             </section>
 
             <section class="booking">
@@ -141,7 +147,9 @@
 
             <div class="credits">
                 <p>Website by</p>
-                <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Академии" width="115" height="41">
+                <a href="https://htmlacademy.ru/intensive/htmlcss">
+                    <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Академии" width="115" height="41">
+                </a>
             </div>
         </footer>
 
