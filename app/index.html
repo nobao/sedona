@@ -32,7 +32,7 @@
             </section>
 
             <section class="city-sights">
-                <h2>Седона – небольшой городок в Аризоне, заслуживающий большего!</h2>
+                <h2>Седона – небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
                 <p>Рассмотри 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 
                 <div class="sight-1">
@@ -44,20 +44,20 @@
                     <div class="sight-photo-block"></div>
                 </div>
 
-                <div class="advice-list">
+                <ul class="advice-list">
                     <li class="advice-item">
-                        <p class="advice-title">Жилье</p>
+                        <p class="advice-title advice-title-1">Жилье</p>
                         <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                     </li>
                     <li class="advice-item">
-                        <p class="advice-title">Еда</p>
+                        <p class="advice-title advice-title-2">Еда</p>
                         <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
                     </li>
                     <li class="advice-item">
-                        <p class="advice-title">Сувениры</p>
+                        <p class="advice-title advice-title-3">Сувениры</p>
                         <p>Не только китайского, но и местного производства!</p>
                     </li>
-                </div>
+                </ul>
 
                 <div class="sight-2">
                     <div class="sight-photo-block"></div>
@@ -93,35 +93,41 @@
                         </div>
                     </div>
                 </div>
-                                
+
             </section>
 
             <section class="booking">
                 <h2 class="visually-hidden">Подбор гостиницы</h2>
                 <p class="booking-title">Заинтересовались?</p>
-                <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+                <p>Укажите предполагаемые даты поездки,<br>и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
 
                 <div class="hotel-search">
                     <div class="hotel-search-title">Поиск гостиницы в Седоне</div>
                     <div class="hotel-search-form-wrapper">
                         <form class="hotel-search-form" action="https://echo.htmlacademy.ru">
-                            <label for="arrival-date">Дата заезда:</label>
-                            <input type="text" name="arrival-date" id="arrival-date" value="24 апреля 2017">
-                            <div class="arrival-cal"></div>
-
-                            <label for="departure-date">Дата выезда:</label>
-                            <input type="text" name="departure-date" id="departure-date" value="4 июля 2017">
-                            <div class="departure-cal"></div>
-
-                            <label for="adults">Взрослые:</label>
-                            <button class="minus" type="button"></button>
-                            <input type="text" name="adults" id="adults" value="2">
-                            <button class="plus" type="button"></button>
-
-                            <label for="children">Дети:</label>
-                            <button class="minus" type="button"></button>
-                            <input type="text" name="children" id="children" value="0">
-                            <button class="plus" type="button"></button>
+                            <div class="arrival-wrapper">
+                                <label for="arrival-date">Дата заезда:</label>
+                                <input type="text" name="arrival-date" id="arrival-date" value="24 апреля 2017">
+                                <div class="cal arrival-cal"></div>
+                            </div>
+                            
+                            <div class="departure-wrapper">
+                                <label for="departure-date">Дата выезда:</label>
+                                <input type="text" name="departure-date" id="departure-date" value="4 июля 2017">
+                                <div class="cal departure-cal"></div>
+                            </div>
+                            
+                            <div class="guests-wrapper">
+                                <label for="adults">Взрослые:</label>
+                                <button class="minus" type="button"></button>
+                                <input type="text" name="adults" id="adults" value="2">
+                                <button class="plus" type="button"></button>
+    
+                                <label for="children">Дети:</label>
+                                <button class="minus" type="button"></button>
+                                <input type="text" name="children" id="children" value="0">
+                                <button class="plus" type="button"></button>
+                            </div>                           
 
                             <button class="button" type="submit">Найти</button>
 
