@@ -36,6 +36,10 @@ button {
     cursor: pointer;
 }
 
+.hide-item {
+    display: none;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -353,8 +357,21 @@ input[type="radio"].visually-hidden {
     line-height: 26px;
     font-weight: 700;
     color: #ffffff;
+    text-transform: uppercase;
 
     background-color: #766357;
+    outline: none;
+}
+
+.hotel-search-title:hover,
+.hotel-search-title:focus {
+    background-color: #604e43;
+}
+
+.hotel-search-title:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: #503e33;
 }
 
 .hotel-search-form-wrapper {
@@ -386,10 +403,11 @@ input[type="radio"].visually-hidden {
 .hotel-search-form label {
     width: 112px;
 
-    text-align-last: left;
+    text-align: left;
 }
 
 .hotel-search-form input {
+    box-sizing: border-box;
     padding: 6px 40px 6px 12px;
 
     font: inherit;
@@ -398,6 +416,17 @@ input[type="radio"].visually-hidden {
     background-color: #f2f2f2;
     border: none;
     outline: none;
+}
+
+.hotel-search-form input:hover {
+    background-color: #ebebeb;
+}
+
+.hotel-search-form input:focus {
+    padding: 4px 38px 4px 10px;
+
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
 }
 
 .arrival-wrapper input,
@@ -411,16 +440,14 @@ input[type="radio"].visually-hidden {
 
 .guests-wrapper input {
     box-sizing: border-box;
-    flex-grow: 1;
     padding: 6px 30px;
     width: 114px;
 
     text-align: center;
 }
 
-.guests-wrapper label:last-of-type {
-    box-sizing: border-box;
-    padding-left: 53px;
+.guests-wrapper input:focus {
+    padding: 4px 28px;
 }
 
 .hotel-search-form .button {
@@ -438,6 +465,17 @@ input[type="radio"].visually-hidden {
     background-color: #81b3d2;
 }
 
+.hotel-search-form .button:hover,
+.hotel-search-form .button:focus {
+    background-color: #669ec0;
+}
+
+.hotel-search-form .button:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: #5496bd;
+}
+
 .cal {
     content: "";
 
@@ -453,4 +491,230 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
 
     opacity: 0.3;
+    cursor: pointer;
+}
+
+.cal:hover,
+.cal:focus {
+    opacity: 1;
+}
+
+.cal:hover ~ input,
+.cal:focus ~ input {
+    background-color: #ebebeb;
+}
+
+.cal:hover ~ input:focus,
+.cal:focus ~ input:focus {
+    background-color: #ffffff;
+}
+
+.cal:active {
+    background-image: url("../img/calendar-active.svg");
+}
+
+.cal:active ~ input {
+    background-color: #ebebeb;
+}
+
+.adults-wrapper,
+.children-wrapper {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    width: 229px;
+}
+
+.children-wrapper label {
+    padding-right: 27px;
+
+    text-align: right;
+}
+
+.minus {
+    content: "";
+
+    position: absolute;
+    top: 13px;
+    right: 88px;
+
+    width: 12px;
+    height: 11px;
+
+    background: linear-gradient(180deg, transparent 4px, #a9a9a9 4px, #a9a9a9 7px, transparent 7px);
+
+    cursor: pointer;
+    outline: none;
+}
+
+.minus:hover,
+.minus:focus {
+    background: linear-gradient(180deg, transparent 4px, #000000 4px, #000000 7px, transparent 7px);
+}
+
+.minus:active {
+    background: linear-gradient(180deg, transparent 4px, #81b3d2 4px, #81b3d2 7px, transparent 7px);
+}
+
+.plus {
+    content: "";
+
+    position: absolute;
+    top: 13px;
+    right: 13px;
+
+    width: 11px;
+    height: 12px;
+
+    background: linear-gradient(180deg, transparent 4px, #a9a9a9 4px, #a9a9a9 7px, transparent 7px),
+                linear-gradient(90deg, transparent 4px, #a9a9a9 4px, #a9a9a9 7px, transparent 7px);
+
+
+    cursor: pointer;
+    outline: none;
+}
+
+.plus:hover,
+.plus:focus {
+    background: linear-gradient(180deg, transparent 4px, #000000 4px, #000000 7px, transparent 7px),
+                linear-gradient(90deg, transparent 4px, #000000 4px, #000000 7px, transparent 7px);
+}
+
+.plus:active {
+    background: linear-gradient(180deg, transparent 4px, #81b3d2 4px, #81b3d2 7px, transparent 7px),
+                linear-gradient(90deg, transparent 4px, #81b3d2 4px, #81b3d2 7px, transparent 7px);
+}
+
+.minus:hover ~ input,
+.minus:focus ~ input,
+.plus:hover ~ input,
+.plus:focus ~ input {
+    background-color: #ebebeb;
+}
+
+.minus:hover ~ input:focus,
+.minus:focus ~ input:focus,
+.plus:hover ~ input:focus,
+.plus:focus ~ input:focus {
+    background-color: #ffffff;
+}
+
+.minus:active ~ input,
+.plus:active ~ input {
+    background-color: #ebebeb;
+}
+
+.map {
+    height: 473px;
+
+    overflow: hidden;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 0;
+}
+
+.main-footer > p {
+    margin: 0;
+    padding: 0;
+    width: 33%;
+
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+}
+
+.main-footer .soc-nav {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 33%;
+
+    list-style-type: none;
+}
+
+.main-footer .soc-nav li + li {
+    margin-left: 6px;
+}
+
+.main-footer .soc-nav a {
+    display: block;
+    width: 46px;
+    height: 48px;
+
+    background-color: #81b3d2;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-footer .twitter-link {
+    background-image: url("../img/twitter.svg");
+}
+
+.main-footer .facebook-link {
+    background-image: url("../img/fb-icon.svg");
+}
+
+.main-footer .youtube-link {
+    background-image: url("../img/youtube.svg");
+}
+
+.soc-nav a:hover,
+.soc-nav a:focus {
+    background-color: #669ec0;
+}
+
+.soc-nav a:active {
+    background-color: #5496bd;
+}
+
+.main-footer .twitter-link:active {
+    background-image: url("../img/twitter-active.svg");
+}
+
+.main-footer .facebook-link:active {
+    background-image: url("../img/fb-icon-active.svg");
+}
+
+.main-footer .youtube-link:active {
+    background-image: url("../img/youtube-active.svg");
+}
+
+.main-footer .credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+}
+
+.main-footer .credits > p {
+    margin: 0;
+    padding: 0;
+    padding-right: 8px;
+
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.main-footer .credits svg {
+    display: block;
+    width: 115px;
+    height: 41px;
+}
+
+.credits a:hover svg path,
+.credits a:focus svg path {
+    fill: #81b3d2;
+}
+
+.credits a:active svg path {
+    fill: #bdbbbc;
 }
