@@ -1,733 +1,757 @@
-body {
-    margin: 0;
-    padding: 0;
-    min-width: 768px;
-    
-    font-family: "PT Sans", Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #333333;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-    background-color: #f2f2f2;
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 768px;
+
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+
+  background-color: #f2f2f2;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
-    outline: none;
+  color: inherit;
+  text-decoration: none;
+  outline: none;
 }
 
-button {    
-    padding: 0;
+button {
+  padding: 0;
 
-    font: inherit;
-    color: inherit;
-    
-    background-color: transparent;
-    border: none;
+  font: inherit;
+  color: inherit;
 
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
 }
 
 .hide-item {
-    display: none;
+  display: none;
 }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-    position: absolute;
+  position: absolute;
 
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-    white-space: nowrap;
+  white-space: nowrap;
 
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 1200px;
-    min-width: 768px;
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 768px;
 
-    background-color: #ffffff;
-    box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
+  background-color: #ffffff;
+  box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
 
 .main-header {
-    position: relative;
+  position: relative;
 
-    padding-left: 6%;
-    padding-right: 6%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .main-header .logo {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
 
-    transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .main-header .main-navigation {
-    display: flex;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  margin: 0;
+  padding: 0;
 
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .main-navigation li {
-    width: 23%;
+  width: 23%;
 
-    line-height: 26px;
-    font-weight: 700;
-    color: #000000;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
 }
 
 .main-navigation li:nth-child(3) {
-    margin-left: auto;
-    text-align: right;
+  margin-left: auto;
+  text-align: right;
 }
 
 .main-navigation li:nth-child(4) {
-    text-align: right;
+  text-align: right;
 }
 
 .main-navigation a:hover,
 .main-navigation a:focus {
-    color: #81b3d2;
+  color: #81b3d2;
 }
 
 .main-navigation a:active {
-    color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .main-navigation a.active {
-    color: #766357;
+  color: #766357;
 }
 
 .intro {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 75px;
-    height: 510px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 75px;
+  height: 510px;
 
-    background-color: #dc5e48;
-    background-image: url("../img/background-photo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 0;
+  background-color: #dc5e48;
+  background-image: url("../img/background-photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
 }
 
 .city-sights {
-    padding-top: 56px;
+  padding-top: 56px;
 }
 
 .city-sights h2 {
-    margin: 0;
-    margin-bottom: 30px;
-    padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
 
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 700;
-    color: #000000;
-    text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
 }
 
 .city-sights > p {
-    margin: 0;
-    margin-bottom: 50px;
-    padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
 
-    line-height: 26px;
-    text-align: center;
+  line-height: 26px;
+  text-align: center;
 }
 
 .sight-1,
 .sight-2 {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .sight-description {
-    box-sizing: border-box;
-    width: 33%;
-    padding-top: 45px;
-    padding-bottom: 60px;
-    padding-left: 4%;
-    padding-right: 4%;
+  width: 33%;
+  padding-top: 45px;
+  padding-bottom: 60px;
+  padding-left: 4%;
+  padding-right: 4%;
 
-    background-color: #81b3d2;
+  background-color: #81b3d2;
 }
 
 .sight-description.minor {
-    width: 100%;
-    padding-right: 15%;
-    padding-left: 15%;
-    
-    background-color: #eeeeee;
+  width: 100%;
+  padding-right: 15%;
+  padding-left: 15%;
+
+  background-color: #eeeeee;
 }
 
 .sight-description .sight-description-title {
-    margin: 0;
-    margin-bottom: 25px;
-    padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
 
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: 700;
-    color: #ffffff;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
 }
 
 .sight-description .sight-description-title.minor {
-    color: #000000;
+  color: #000000;
 }
 
 .sight-description p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    color: #ffffff;
-    text-align: center;
+  color: #ffffff;
+  text-align: center;
 }
 
 .sight-description.minor p {
-    color: #333333;
+  color: #333333;
 }
 
 .sight-description-title + p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .sight-photo-block {
-    width: 67%;
+  width: 67%;
 
-    background-image: url("../img/photo-1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: url("../img/photo-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .sight-2 .sight-photo-block {
-    background-image: url("../img/photo-2.jpg");
+  background-image: url("../img/photo-2.jpg");
 }
 
 .minor-sight-wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 
-    background-color: #eeeeee;
+  background-color: #eeeeee;
 }
 
 .sight-3,
 .sight-4,
 .sight-5 {
-    width: 33%;
+  width: 33%;
 }
 
 .advice-list {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .advice-list .advice-item {
-    box-sizing: border-box;
-    width: 33%;
-    padding: 163px 4.6% 68px;
+  width: 33%;
+  padding: 163px 4.6% 68px;
 
-    text-align: center;
+  text-align: center;
 }
 
 .advice-item .advice-title {
-    position: relative;
+  position: relative;
 
-    margin: 0;
-    margin-bottom: 24px;
-    padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
 
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: 700;
-    color: #000000;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
 }
 
 .advice-list .advice-title::before {
-    content: "";
+  content: "";
 
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
 
-    background-position: 0 0;
-    background-repeat: no-repeat;
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .advice-title-1::before {
-    width: 75px;
-    height: 72px;
+  width: 75px;
+  height: 72px;
 
-    background-image: url("../img/icon-1.svg");
+  background-image: url("../img/icon-1.svg");
 }
 
 .advice-title-2::before {
-    width: 74px;
-    height: 70px;
+  width: 74px;
+  height: 70px;
 
-    background-image: url("../img/icon-3.svg");
+  background-image: url("../img/icon-3.svg");
 }
 
 .advice-title-3::before {
-    width: 64px;
-    height: 76px;
+  width: 64px;
+  height: 76px;
 
-    background-image: url("../img/icon-2.svg");
+  background-image: url("../img/icon-2.svg");
 }
 
 .advice-title + p {
-    padding: 0;
+  padding: 0;
 }
 
 .booking {
-    padding-top: 55px;
+  padding-top: 55px;
 
-    text-align: center;
+  text-align: center;
 }
 
 .booking .booking-title {
-    margin: 0;
-    margin-bottom: 25px;
-    padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
 
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 700;
-    color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
 }
 
 .booking-title + p {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 45px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 45px;
 
-    font-size: 14px;
-    line-height: 24px;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .hotel-search {
-    position: relative;
+  position: relative;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hotel-search-title {
-    box-sizing: border-box;
-    padding: 30px 30px;
-    width: 568px;
+  padding: 30px 30px;
+  width: 568px;
 
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 700;
-    color: #ffffff;
-    text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
 
-    background-color: #766357;
-    outline: none;
+  background-color: #766357;
+  outline: none;
 }
 
 .hotel-search-title:hover,
 .hotel-search-title:focus {
-    background-color: #604e43;
+  background-color: #604e43;
 }
 
 .hotel-search-title:active {
-    color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 
-    background-color: #503e33;
+  background-color: #503e33;
 }
 
 .pull-down {
-    animation: pull-down 0.6s ease-out;
-    transform-origin: 50% 0;
+  animation: pull-down 0.6s ease-out;
+  transform-origin: 50% 0;
 }
 
 @keyframes pull-down {
-    0% { transform: scaleY(0.1); }
-    40% { transform: scaleY(1.02); }
-    60% { transform: scaleY(0.98); }
-    80% { transform: scaleY(1.01); }
-    100% { transform: scaleY(1); }
+  0% {
+    transform: scaleY(0.1);
+  }
+  40% {
+    transform: scaleY(1.02);
+  }
+  60% {
+    transform: scaleY(0.98);
+  }
+  80% {
+    transform: scaleY(1.01);
+  }
+  100% {
+    transform: scaleY(1);
+  }
 }
 
 .hotel-search-form-wrapper {
-    position: absolute;
-    top: 86px;
+  position: absolute;
+  top: 86px;
+  z-index: 2;
 
-    box-sizing: border-box;
-    padding: 55px;
-    width: 568px;
+  padding: 55px;
+  width: 568px;
 
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: 700;
-    color: #000000;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
 
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .arrival-wrapper,
 .departure-wrapper,
 .guests-wrapper {
-    position: relative;
+  position: relative;
 
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .hotel-search-form label {
-    width: 112px;
+  width: 112px;
 
-    text-align: left;
+  text-align: left;
 }
 
 .hotel-search-form input {
-    box-sizing: border-box;
-    padding: 6px 40px 6px 12px;
+  padding: 6px 40px 6px 12px;
 
-    font: inherit;
-    text-transform: uppercase;
+  font: inherit;
+  text-transform: uppercase;
 
-    background-color: #f2f2f2;
-    border: none;
-    outline: none;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
 }
 
 .hotel-search-form input:hover {
-    background-color: #ebebeb;
+  background-color: #ebebeb;
 }
 
 .hotel-search-form input:focus {
-    padding: 4px 38px 4px 10px;
+  padding: 4px 38px 4px 10px;
 
-    background-color: #ffffff;
-    border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
 }
 
 .arrival-wrapper input,
 .departure-wrapper input {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .guests-wrapper {
-    margin-bottom: 54px;
+  margin-bottom: 54px;
 }
 
 .guests-wrapper input {
-    box-sizing: border-box;
-    padding: 6px 30px;
-    width: 114px;
+  padding: 6px 30px;
+  width: 114px;
 
-    text-align: center;
+  text-align: center;
 }
 
 .guests-wrapper input:focus {
-    padding: 4px 28px;
+  padding: 4px 28px;
 }
 
 .hotel-search-form .button {
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    padding: 16px 30px;
+  display: block;
+  width: 100%;
+  padding: 16px 30px;
 
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 700;
-    color: #ffffff;
-    text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
 
-    background-color: #81b3d2;
+  background-color: #81b3d2;
 }
 
 .hotel-search-form .button:hover,
 .hotel-search-form .button:focus {
-    background-color: #669ec0;
+  background-color: #669ec0;
 }
 
 .hotel-search-form .button:active {
-    color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 
-    background-color: #5496bd;
+  background-color: #5496bd;
 }
 
 .cal {
-    content: "";
+  content: "";
 
-    position: absolute;
-    top: 8px;
-    right: 9px;
+  position: absolute;
+  top: 8px;
+  right: 9px;
 
-    width: 21px;
-    height: 22px;
+  width: 21px;
+  height: 22px;
 
-    background-image: url("../img/calendar.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
+  background-image: url("../img/calendar.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
 
-    opacity: 0.3;
-    cursor: pointer;
+  opacity: 0.3;
+  cursor: pointer;
 }
 
 .cal:hover,
 .cal:focus {
-    opacity: 1;
+  opacity: 1;
 }
 
 .cal:hover ~ input,
 .cal:focus ~ input {
-    background-color: #ebebeb;
+  background-color: #ebebeb;
 }
 
 .cal:hover ~ input:focus,
 .cal:focus ~ input:focus {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .cal:active {
-    background-image: url("../img/calendar-active.svg");
+  background-image: url("../img/calendar-active.svg");
 }
 
 .cal:active ~ input {
-    background-color: #ebebeb;
+  background-color: #ebebeb;
 }
 
 .adults-wrapper,
 .children-wrapper {
-    position: relative;
+  position: relative;
 
-    display: flex;
-    align-items: center;
-    width: 229px;
+  display: flex;
+  align-items: center;
+  width: 229px;
 }
 
 .children-wrapper label {
-    padding-right: 27px;
+  padding-right: 27px;
 
-    text-align: right;
+  text-align: right;
 }
 
 .minus {
-    content: "";
+  content: "";
 
-    position: absolute;
-    top: 13px;
-    right: 88px;
+  position: absolute;
+  top: 13px;
+  right: 88px;
 
-    width: 12px;
-    height: 11px;
+  width: 12px;
+  height: 11px;
 
-    background: linear-gradient(180deg, transparent 4px, #a9a9a9 4px, #a9a9a9 7px, transparent 7px);
+  background: linear-gradient(180deg, transparent 4px, #a9a9a9 4px, #a9a9a9 7px, transparent 7px);
 
-    cursor: pointer;
-    outline: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .minus:hover,
 .minus:focus {
-    background: linear-gradient(180deg, transparent 4px, #000000 4px, #000000 7px, transparent 7px);
+  background: linear-gradient(180deg, transparent 4px, #000000 4px, #000000 7px, transparent 7px);
 }
 
 .minus:active {
-    background: linear-gradient(180deg, transparent 4px, #81b3d2 4px, #81b3d2 7px, transparent 7px);
+  background: linear-gradient(180deg, transparent 4px, #81b3d2 4px, #81b3d2 7px, transparent 7px);
 }
 
 .plus {
-    content: "";
+  content: "";
 
-    position: absolute;
-    top: 13px;
-    right: 13px;
+  position: absolute;
+  top: 13px;
+  right: 13px;
 
-    width: 11px;
-    height: 12px;
+  width: 11px;
+  height: 12px;
 
-    background: linear-gradient(180deg, transparent 4px, #a9a9a9 4px, #a9a9a9 7px, transparent 7px),
-                linear-gradient(90deg, transparent 4px, #a9a9a9 4px, #a9a9a9 7px, transparent 7px);
+  background: linear-gradient(180deg, transparent 4px, #a9a9a9 4px, #a9a9a9 7px, transparent 7px),
+    linear-gradient(90deg, transparent 4px, #a9a9a9 4px, #a9a9a9 7px, transparent 7px);
 
-
-    cursor: pointer;
-    outline: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .plus:hover,
 .plus:focus {
-    background: linear-gradient(180deg, transparent 4px, #000000 4px, #000000 7px, transparent 7px),
-                linear-gradient(90deg, transparent 4px, #000000 4px, #000000 7px, transparent 7px);
+  background: linear-gradient(180deg, transparent 4px, #000000 4px, #000000 7px, transparent 7px),
+    linear-gradient(90deg, transparent 4px, #000000 4px, #000000 7px, transparent 7px);
 }
 
 .plus:active {
-    background: linear-gradient(180deg, transparent 4px, #81b3d2 4px, #81b3d2 7px, transparent 7px),
-                linear-gradient(90deg, transparent 4px, #81b3d2 4px, #81b3d2 7px, transparent 7px);
+  background: linear-gradient(180deg, transparent 4px, #81b3d2 4px, #81b3d2 7px, transparent 7px),
+    linear-gradient(90deg, transparent 4px, #81b3d2 4px, #81b3d2 7px, transparent 7px);
 }
 
 .minus:hover ~ input,
 .minus:focus ~ input,
 .plus:hover ~ input,
 .plus:focus ~ input {
-    background-color: #ebebeb;
+  background-color: #ebebeb;
 }
 
 .minus:hover ~ input:focus,
 .minus:focus ~ input:focus,
 .plus:hover ~ input:focus,
 .plus:focus ~ input:focus {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .minus:active ~ input,
 .plus:active ~ input {
-    background-color: #ebebeb;
+  background-color: #ebebeb;
 }
 
 .map {
-    height: 473px;
+  position: relative;
 
-    overflow: hidden;
+  height: 473px;
+
+  overflow: hidden;
+}
+
+.map .google-map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border: none;
 }
 
 .main-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 36px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 0;
 }
 
 .main-footer > p {
-    margin: 0;
-    padding: 0;
-    width: 33%;
+  margin: 0;
+  padding: 0;
+  width: 33%;
 
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: 700;
-    color: #000000;
-    text-align: center;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
 }
 
 .main-footer .soc-nav {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    width: 33%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 33%;
 
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .main-footer .soc-nav li + li {
-    margin-left: 6px;
+  margin-left: 6px;
 }
 
 .main-footer .soc-nav a {
-    display: block;
-    width: 46px;
-    height: 48px;
+  display: block;
+  width: 46px;
+  height: 48px;
 
-    background-color: #81b3d2;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .main-footer .twitter-link {
-    background-image: url("../img/twitter.svg");
+  background-image: url("../img/twitter.svg");
 }
 
 .main-footer .facebook-link {
-    background-image: url("../img/fb-icon.svg");
+  background-image: url("../img/fb-icon.svg");
 }
 
 .main-footer .youtube-link {
-    background-image: url("../img/youtube.svg");
+  background-image: url("../img/youtube.svg");
 }
 
 .soc-nav a:hover,
 .soc-nav a:focus {
-    background-color: #669ec0;
+  background-color: #669ec0;
 }
 
 .soc-nav a:active {
-    background-color: #5496bd;
+  background-color: #5496bd;
 }
 
 .main-footer .twitter-link:active {
-    background-image: url("../img/twitter-active.svg");
+  background-image: url("../img/twitter-active.svg");
 }
 
 .main-footer .facebook-link:active {
-    background-image: url("../img/fb-icon-active.svg");
+  background-image: url("../img/fb-icon-active.svg");
 }
 
 .main-footer .youtube-link:active {
-    background-image: url("../img/youtube-active.svg");
+  background-image: url("../img/youtube-active.svg");
 }
 
 .main-footer .credits {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
 }
 
 .main-footer .credits > p {
-    margin: 0;
-    padding: 0;
-    padding-right: 8px;
+  margin: 0;
+  padding: 0;
+  padding-right: 8px;
 
-    font-size: 14px;
-    line-height: 26px;
-    color: #000000;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
 }
 
 .main-footer .credits svg {
-    display: block;
-    width: 115px;
-    height: 41px;
+  display: block;
+  width: 115px;
+  height: 41px;
 }
 
 .credits a:hover svg path,
 .credits a:focus svg path {
-    fill: #81b3d2;
+  fill: #81b3d2;
 }
 
 .credits a:active svg path {
-    fill: #bdbbbc;
+  fill: #bdbbbc;
 }
