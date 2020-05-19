@@ -35,7 +35,7 @@
               <legend>Инфраструктура:</legend>
               <ul>
                 <li>
-                  <input class="visually-hidden" type="checkbox" name="pool" id="pool"/>
+                  <input class="visually-hidden" type="checkbox" name="pool" id="pool" />
                   <label for="pool">Бассейн</label>
                 </li>
                 <li>
@@ -43,7 +43,7 @@
                   <label for="parking">Парковка</label>
                 </li>
                 <li>
-                  <input class="visually-hidden" type="checkbox" name="wi-fi" id="wi-fi"/>
+                  <input class="visually-hidden" type="checkbox" name="wi-fi" id="wi-fi" />
                   <label for="wi-fi">Wi-Fi</label>
                 </li>
               </ul>
@@ -67,25 +67,28 @@
               </ul>               
             </fieldset>
 
-            <fieldset class="price">
-              <legend>Стоимость в сутки (р):</legend>
-              <ul>
-                <li>
-                  <input type="text" name="min-price" id="min-price">
-                  <label for="min-price">От</label>
-                </li>
-                <li>
-                  <input type="text" name="max-price" id="max-price">
-                  <label for="max-price">До</label>
-                </li>
-              </ul>
-              <div class="min-max-range">
-                <div class="min-price-slider"></div>
-                <div class="max-price-slider"></div>
-              </div>
-            </fieldset>
-
-            <button type="submit">Показать</button>
+            <div class="column-wrapper">
+              <fieldset class="price">
+                <legend>Стоимость в сутки (р):</legend>
+                <ul>
+                  <li>
+                    <input type="text" name="min-price" id="min-price">
+                    <label for="min-price">От</label>
+                  </li>
+                  <li>
+                    <input type="text" name="max-price" id="max-price">
+                    <label for="max-price">До</label>
+                  </li>
+                </ul>
+                <div class="min-max-range">
+                  <div class="min-price-slider"></div>
+                  <div class="max-price-slider"></div>
+                </div>
+              </fieldset>
+  
+              <button type="submit">Показать</button>
+            </div>
+            
           </form>
         </section>
 
