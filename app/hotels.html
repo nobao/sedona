@@ -70,14 +70,14 @@
             <div class="column-wrapper">
               <fieldset class="price">
                 <legend>Стоимость в сутки (р):</legend>
-                <ul>
+                <ul class="price-input">
                   <li>
-                    <input type="text" name="min-price" id="min-price">
-                    <label for="min-price">От</label>
+                    <input type="text" name="min-price" id="min-price" value="ОТ 0">
+                    <label class="visually-hidden" for="min-price">От</label>
                   </li>
                   <li>
-                    <input type="text" name="max-price" id="max-price">
-                    <label for="max-price">До</label>
+                    <input type="text" name="max-price" id="max-price" value="ДО 3000">
+                    <label class="visually-hidden" for="max-price">До</label>
                   </li>
                 </ul>
                 <div class="min-max-range">
@@ -86,7 +86,7 @@
                 </div>
               </fieldset>
   
-              <button type="submit">Показать</button>
+              <button class="button" type="submit">Показать</button>
             </div>
             
           </form>
@@ -121,7 +121,7 @@
                   <p class="price">От 4000 р.</p>
                 </div>
                 <a class="button" href="#">Подробнее</a>
-                <button type="button">Забронировать</button>
+                <button class="button" type="button">Забронировать</button>
               </div>
               <img src="img/Amara-photo.jpg" alt="Фотография внутренней территории гостиницы Amara Resort & Spa" width="135" height="90">
               <div class="rating-wrapper">
@@ -137,7 +137,7 @@
                   <p class="price">От 3000 р.</p>
                 </div>
                 <a class="button" href="#">Подробнее</a>
-                <button type="button">Забронировать</button>
+                <button class="button" type="button">Забронировать</button>
               </div>
               <img src="img/Desert-photo.jpg" alt="Фотография фасада мотеля Desert Quail Inn" width="135" height="90">
               <div class="rating-wrapper">
@@ -153,7 +153,7 @@
                   <p class="price">От 2000 р.</p>
                 </div>
                 <a class="button" href="#">Подробнее</a>
-                <button type="button">Забронировать</button>
+                <button class="button" type="button">Забронировать</button>
               </div>
               <img src="img/Villas-photo.jpg" alt="Фотография фасада апартаментов Villas at Poco Diablo" width="135" height="90">
               <div class="rating-wrapper">

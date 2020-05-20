@@ -42,6 +42,18 @@ button {
   cursor: pointer;
 }
 
+.button {
+  display: inline-block;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .hide-item {
   display: none;
 }
@@ -793,7 +805,8 @@ input[type="radio"].visually-hidden {
   list-style-type: none;
 }
 
-.filters li + li {
+.infrastructure li + li,
+.housing-type li + li {
   margin-top: 23px;
 }
 
@@ -822,7 +835,7 @@ input[type="radio"].visually-hidden {
 .infrastructure input:checked + label::before,
 .housing-type input:checked + label::before {
   width: 26px;
-  
+
   background-image: url("../img/checkbox-on.svg");
 }
 
@@ -830,6 +843,92 @@ input[type="radio"].visually-hidden {
   margin-right: 12%;
 }
 
+.filters input[type="checkbox"]:disabled + label::before {
+  opacity: 0.3;
+}
+
 .filters .column-wrapper {
   margin-left: auto;
+  width: 30%;
+}
+
+.price legend {
+  margin-bottom: 8px;
+}
+
+.filters .price-input {
+  display: flex;
+  margin-bottom: 20px;
+
+  background-image: url("../img/line-input.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+}
+
+.price-input li {
+  margin-top: 0;
+}
+
+.price-input input {
+  padding: 5px 10px;
+  width: 100%;
+
+  line-height: 21px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: transparent;
+  border: none;
+}
+
+.min-max-range {
+  position: relative;
+
+  margin-left: 5px;
+  margin-bottom: 32px;
+  height: 2px;
+
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 0.3) 80%);
+}
+
+.min-max-range .min-price-slider,
+.min-max-range .max-price-slider {
+  position: absolute;
+  top: -8px;
+
+  width: 20px;
+  height: 22px;
+
+  background-image: url("../img/filter-button.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat; 
+  cursor: pointer;
+}
+
+.min-max-range .min-price-slider {
+  left: 0;
+}
+
+.min-max-range .min-price-slider {
+  left: 79%;
+}
+
+.column-wrapper .button {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 35px;
+
+  text-align: center;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+}
+
+.column-wrapper .button:hover,
+.column-wrapper .button:focus {
+  color: #000000;
+
+  background-color: #ffffff;
 }
